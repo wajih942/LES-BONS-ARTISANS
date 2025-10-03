@@ -7,7 +7,6 @@ dotenv.config();
 const JWT_SECRET = process.env.JWT_SECRET || 'change_this_secret';
 const JWT_EXPIRES_IN = process.env.JWT_EXPIRES_IN || '5h';
 
-console.log("eee",JWT_SECRET,JWT_EXPIRES_IN)
 // Register new user
 async function register(req, res) {
   try {
